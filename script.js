@@ -1,6 +1,6 @@
 const boredApp = {};
 //url endpoint for random and start point for search params
-boredApp.url = "http://www.boredapi.com/api/activity";
+boredApp.url = "https://shrouded-bayou-34065.herokuapp.com/http://www.boredapi.com/api/activity";
 
 boredApp.generateButton = document.getElementById("generate");
 boredApp.randomButton = document.getElementById("random");
