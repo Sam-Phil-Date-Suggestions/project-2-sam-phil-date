@@ -22,6 +22,10 @@
         margin-top: 30px;
     }
 
+    @media (max-width:$mobile) {
+        width: 100%;
+    }
+
 
     form {
         display: flex;

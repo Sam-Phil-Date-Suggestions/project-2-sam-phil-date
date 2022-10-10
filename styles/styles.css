@@ -607,6 +607,11 @@ li {
     margin-top: 30px;
   }
 }
+@media (max-width: 480px) {
+  .activityGenerator {
+    width: 100%;
+  }
+}
 .activityGenerator form {
   display: -webkit-box;
   display: -ms-flexbox;
