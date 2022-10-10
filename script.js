@@ -20,7 +20,7 @@ boredApp.randomButton.addEventListener("click", (e) => {
 
 //gets data for random activity/button
 boredApp.random = () => {
-  fetch("http://www.boredapi.com/api/activity")
+  fetch(boredApp.url)
     .then((res) => {
       return res.json();
     })

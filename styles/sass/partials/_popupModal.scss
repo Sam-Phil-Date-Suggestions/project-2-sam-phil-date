@@ -21,8 +21,9 @@
     max-width: 100%;
 
     @media (max-width:$mobile) {
-      max-width: 80%;
-      height: 100vh;
+      min-width: 95%;
+
+      height: 80vh;
     }
 
     button {
@@ -77,6 +78,10 @@
       margin: 14px;
       list-style: inside;
 
+      @media (max-width:$mobile) {
+        margin: 14px 0;
+        list-style: disc;
+      }
     }
   }
 }

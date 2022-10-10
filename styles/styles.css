@@ -458,8 +458,8 @@ li {
 }
 @media (max-width: 480px) {
   .popUp .popUpInner {
-    max-width: 80%;
-    height: 100vh;
+    min-width: 95%;
+    height: 80vh;
   }
 }
 .popUp .popUpInner button {
@@ -506,6 +506,12 @@ li {
 .popUp ul li {
   margin: 14px;
   list-style: inside;
+}
+@media (max-width: 480px) {
+  .popUp ul li {
+    margin: 14px 0;
+    list-style: disc;
+  }
 }
 
 .weather {
