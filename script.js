@@ -26,7 +26,6 @@ boredApp.random = () => {
     })
     .then((jsonResponse) => {
       const activity = jsonResponse.activity;
-      console.log(jsonResponse);
       boredApp.display(activity);
     });
 };
