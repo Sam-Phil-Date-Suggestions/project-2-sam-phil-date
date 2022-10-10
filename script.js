@@ -88,7 +88,6 @@ weatherApp.searchCity = (cityName) => {
     appid: weatherApp.apiKey,
     units: "metric",
   });
-  console.log(url.search)
   weatherApp.fetchData(url);
 };
 
@@ -104,14 +103,14 @@ weatherApp.fetchData = (url) =>
   fetch(url)
     .then((response) => {
       if (response.ok) {
-        console.log(response)
+
         return response.json();
       } else {
         throw new Error("Something went wrong");
       }
     })
     .then((jsonResponse) => {
-      console.log(jsonResponse);
+
       const weatherData = {
         mainTemp: jsonResponse.main.temp,
         feelsLike: jsonResponse.main.feels_like,
